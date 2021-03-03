@@ -1,0 +1,2 @@
+class ExcluirController < ApplicationController
+end

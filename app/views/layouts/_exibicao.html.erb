@@ -1,0 +1,42 @@
+<style>
+    .navbar-brand{
+        margin-left: 5%;
+    }
+    .navbar-nav{
+        margin-left: 12%;
+        font-size: 110%;
+    }
+
+    #home .active_home, #inserir .active_home, #alterar .active_home, #excluir .active_home{
+        color: white
+    }
+
+    #title-1{
+        margin-top: 3%;
+        text-align: center;
+    }
+
+    #home .active_1, #inserir .active_2, #alterar .active_3, #excluir .active_4{
+        color: black
+    }
+</style>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark"> 
+    <a class="navbar-brand" href="javascript:void(0)">RubyOnRails Samuel Oliveira</a>
+    <ul class="navbar-nav">
+        <li class="nav-item"> <a href="/" class="nav-link active_home"> Principal </a> </li>
+        <li class="nav-item"> <a href="/" class="nav-link"> Sobre </a> </li>
+        <li class="nav-item"> <a href="/" class="nav-link"> Contato </a> </li>
+    </ul>
+</nav>
+
+<div id="title-1">
+    <p class="lead"> CRUD RubyOnRails + Bootstrap e Interação com formulario</p>
+</div>
+
+<ul class="nav justify-content-center">
+    <li class="nav-item"> <a href="/" class="nav-link active_1"> Exibir dados </a> </li>
+    <li class="nav-item"> <a href="/inserir" class="nav-link active_2"> inserir dado </a> </li>
+    <li class="nav-item"> <a href="/alterar" class="nav-link active_3"> Alterar dado </a> </li>
+    <li class="nav-item"> <a href="/excluir" class="nav-link active_4"> Excluir dado </a> </li>
+</ul>

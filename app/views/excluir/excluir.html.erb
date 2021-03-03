@@ -1,0 +1,34 @@
+<style>
+#container{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    width: 85%;
+}
+
+form{
+    text-align: center;
+}
+
+form input{
+    text-align: center;
+    display: block;
+    margin: 6% 0;
+    width: 160%;
+}
+
+</style>
+
+<body id="excluir">
+    <div id="container">
+        <div id="container-form">
+            <form action="/alterar/enviar" method="POST">
+                <fieldset>
+                    <legend style="margin-left: 30%;"> Excluir dado </legend>
+                    <input type="number" placeholder="*digite o id" required> 
+                    <input type="submit" value="Enviar"> 
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
