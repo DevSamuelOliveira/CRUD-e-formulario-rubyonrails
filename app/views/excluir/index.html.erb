@@ -22,11 +22,12 @@ form input{
 <body id="excluir">
     <div id="container">
         <div id="container-form">
-            <form action="/alterar/enviar" method="POST">
+            <form action="/excluir" method="POST">
                 <fieldset>
                     <legend style="margin-left: 30%;"> Excluir dado </legend>
-                    <input type="number" placeholder="*digite o id" required> 
+                    <input type="number" placeholder="*digite o id" name="id" required> 
                     <input type="submit" value="Enviar"> 
+                    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
                 </fieldset>
             </form>
         </div>

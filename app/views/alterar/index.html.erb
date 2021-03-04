@@ -1,0 +1,39 @@
+<style>
+#container{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    width: 85%;
+}
+
+form{
+    text-align: center;
+}
+
+form input{
+    text-align: center;
+    display: block;
+    margin: 6% 0;
+    width: 160%;
+}
+
+</style>
+
+<body id="alterar">
+    <div id="container">
+        <div id="container-form">
+            <form action="/alterar" method="POST">
+                <fieldset>
+                    <legend style="margin-left: 30%;"> Alterar os dados </legend>
+                    <input type="number" placeholder="*digite o id" name="id" required> 
+                    <input type="text" placeholder="altere o nome" name="nome" required> 
+                    <input type="number" placeholder="altere a idade" name="idade" required> 
+                    <input type="email" placeholder="altere o e-mail" name="email" required>
+                    <input type="text" placeholder="altere o número" name="numero" required>
+                    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+                    <input type="submit" value="Enviar"> 
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>

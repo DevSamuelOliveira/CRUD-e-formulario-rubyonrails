@@ -1,0 +1,38 @@
+<style>
+#container{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    width: 85%;
+}
+
+form{
+    text-align: center;
+}
+
+form input{
+    text-align: center;
+    display: block;
+    margin: 6% 0;
+    width: 160%;
+}
+
+</style>
+
+<body id="inserir">
+    <div id="container">
+        <div id="container-form">
+            </fieldset>
+                <form action="/inserir" method="POST">
+                    <legend style="margin-left: 30%;"> Insira os dados </legend>
+                    <input type="text" placeholder="Digite o nome" name="nome" required> 
+                    <input type="number" placeholder="Digite a idade" name="idade" required> 
+                    <input type="email" placeholder="Digite o e-mail" name="email" required>
+                    <input type="text" placeholder="Digite o número" name="numero" required>
+                    <input type="submit" value="Enviar"> 
+                    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+                </form>
+            <fieldset>
+        </div>
+    </div>
+</body>
